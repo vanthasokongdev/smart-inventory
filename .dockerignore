@@ -1,0 +1,44 @@
+# Ignore Docker-related files
+docker-compose.override.yml
+.dockerignore
+
+# Ignore node_modules in Docker context
+node_modules/
+npm-debug.log
+
+# Ignore vendor in Docker context (will be installed in container)
+vendor/
+
+# Ignore environment files (will be configured separately)
+.env.local
+.env.*.local
+
+# Ignore build artifacts
+public/build/
+public/hot
+public/storage
+
+# Ignore logs
+storage/logs/*.log
+
+# Ignore cache
+bootstrap/cache/*.php
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore git
+.git/
+.gitignore
+.gitattributes
